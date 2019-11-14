@@ -5,7 +5,7 @@ Incorporates:
 - [HoloLensForCV](https://github.com/microsoft/HoloLensForCV) sample from Microsoft 
 - My [BoundingBoxUtils-Unity](https://github.com/doughtmw/BoundingBoxUtils-Unity) sample
 
-![Pv depth camera sample](https://github.com/doughtmw/HoloLensForCV-Unity/blob/master/HoloLens-PvDepth-Example.jpg)
+![Yolo detection sample](https://github.com/doughtmw/YoloDetectionHoloLens-Unity/blob/master/Yolo-Detection-Example.jpg)
 
 ## Requirements
 - Tested with [Unity 2018.4 LTS](https://unity3d.com/unity/qa/lts-releases
