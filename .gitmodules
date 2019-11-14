@@ -1,0 +1,3 @@
+[submodule "HoloLensForCV"]
+	path = HoloLensForCV
+	url = git@github.com:doughtmw/HoloLensForCV.git
