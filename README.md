@@ -55,3 +55,27 @@ Incorporates:
 **C#**
 - These capabilites should be updated automatically through the Unity project build settings
 - Ensure that permissions to internet client, internet client server, private network client server, and webcam are all satisfied
+
+- Restricted capabilities package:
+``` xml
+<Package 
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
+  xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2" 
+  xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3" 
+  xmlns:uap4="http://schemas.microsoft.com/appx/manifest/uap/windows10/4" 
+  xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10" 
+  xmlns:mobile="http://schemas.microsoft.com/appx/manifest/mobile/windows10" 
+  IgnorableNamespaces="uap uap2 uap3 uap4 mp mobile iot" 
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"> 
+```
+- Modified capabilities with with new package:
+``` xml
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <Capability Name="internetClientServer" />
+    <Capability Name="privateNetworkClientServer" />
+    <uap2:Capability Name="spatialPerception" />
+    <DeviceCapability Name="webcam" />
+  </Capabilities>
+```
