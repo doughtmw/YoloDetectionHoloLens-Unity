@@ -14,7 +14,7 @@ Incorporates:
 - Minimum [RS4](https://docs.microsoft.com/en-us/windows/mixed-reality/release-notes-april-2018), tested with [OS Build 17763.678](https://support.microsoft.com/en-ca/help/4511553/windows-10-update-kb4511553)
 
 ## Yolo Detect Sample
-### Build HoloLensForCV project and configure Unity project
+### Build HoloLensForCV project and configure YoloDetectionHoloLensUnity Unity project
 1. Open HoloLensForCV sample in VS2017 and install included OpenCV nuget package to HoloLensForCV project
 2. Build the HoloLensForCV project (x86, Debug or Release) 
 3. Copy all output files from HoloLensForCV path (dlls and HoloLensForCV.winmd) to the Assets->Plugins->x86 folder of the YoloDetectionHoloLensUnity project
