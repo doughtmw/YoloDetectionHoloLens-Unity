@@ -22,11 +22,11 @@ Incorporates:
 5. Under Unity build settings, switch the platform to Universal Windows Platform and [adjust relevant settings](https://blogs.msdn.microsoft.com/appconsult/2018/11/08/how-to-debug-unity-projects-with-il2cpp-backends-on-the-hololens/). Build project using IL2CPP
 6. Open VS solution from Unity build, build then deploy to device
 
-## Build and run ComputeOnDesktopYolo project
+### Build and run ComputeOnDesktopYolo project
 1. Open the HoloLensForCV sample and build the ComputeOnDesktopYolo project (x64, Debug or Release) 
 2. Deploy project to Local Machine
 
-## Combining the samples to process HoloLens PV camera frames
+### Combining the samples to process HoloLens PV camera frames
 1. Ensure the HoloLens and PC are on the same network and the HoloLens is currently running the YoloDetectionHoloLensUnity sample
 2. When the deployed ComputeOnDesktopYolo desktop app opens, enter the [IP of the HoloLens to connect](https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-windows-device-portal) and click connect
 5. Sensor frames from the HoloLens should begin to stream to the desktop and appear in the app window
