@@ -2,7 +2,7 @@
 Object detection sample using the Yolo framework and HoloLens photo/video sensro stream. C++ project to receive PV sensor frames, and send bounding boxes is made available for use in Unity through [IL2CPP Windows Runtime support](https://docs.unity3d.com/2018.4/Documentation/Manual/IL2CPP-WindowsRuntimeSupport.html). 
 
 Incorporates:
-- [HoloLensForCV](https://github.com/microsoft/HoloLensForCV) sample from Microsoft 
+- Modified [HoloLensForCV](https://github.com/microsoft/HoloLensForCV) sample from Microsoft 
 - [BoundingBoxUtils-Unity](https://github.com/doughtmw/BoundingBoxUtils-Unity) sample
 
 ![Yolo detection sample](https://github.com/doughtmw/YoloDetectionHoloLens-Unity/blob/master/Yolo-Detection-Example.jpg)
