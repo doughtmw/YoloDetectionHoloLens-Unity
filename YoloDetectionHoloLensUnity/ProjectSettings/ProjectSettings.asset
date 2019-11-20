@@ -521,7 +521,7 @@ PlayerSettings:
   metroCertificateNotAfter: 001ac5271eb2d601
   metroApplicationDescription: YoloDetectionHoloLensUnity
   wsaImages: {}
-  metroTileShortName: UnityDetectObjectYoloHoloLens
+  metroTileShortName: YoloDetectionHoloLensUnity
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
