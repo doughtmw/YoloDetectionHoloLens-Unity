@@ -32,7 +32,7 @@ namespace YoloDetectionHoloLens
         // Parameters for host connect
         // https://stackoverflow.com/questions/32876966/how-to-get-local-host-name-in-c-sharp-on-a-windows-10-universal-app
         // Connecting to desktop host IP, not the hololens... Get the IP of PC and retry with specified port 
-        public string ipAddressForConnect = "142.76.25.8";
+        public string ipAddressForConnect = "000.00.00.0";
         public string hostId = "12345";
 
         public Text myText;
