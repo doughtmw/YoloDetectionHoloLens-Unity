@@ -9,8 +9,6 @@ Desktop (server)             |  HoloLens (client)
 :-------------------------:|:-------------------------:
 ![](yolo-server.PNG)  |  ![](yolo-hololens.JPG)
 
-![Yolo detection hololens sample](https://github.com/doughtmw/YoloDetectionHoloLens-Unity/blob/master/yolo-hololens.JPG)
-
 ## Requirements
 - Tested with [Unity 2018.4 LTS](https://unity3d.com/unity/qa/lts-releases
 )
