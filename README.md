@@ -7,7 +7,7 @@ Incorporates:
 
 Desktop (server)             |  HoloLens (client)
 :-------------------------:|:-------------------------:
-![](yolo-server-noip.JPG)  |  ![](yolo-hololens.JPG)
+![](yolo-server-noip.jpg)  |  ![](yolo-hololens.JPG)
 
 Difference in above bounding box size is caused by capturing frames from different time points and the viewing perspective through the HoloLens.
 
