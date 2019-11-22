@@ -9,6 +9,8 @@ Desktop (server)             |  HoloLens (client)
 :-------------------------:|:-------------------------:
 ![](yolo-server.PNG)  |  ![](yolo-hololens.JPG)
 
+Difference in above bounding box size is caused by capturing frames from different time points and the viewing perspective through the HoloLens.
+
 ## Requirements
 - Tested with [Unity 2018.4 LTS](https://unity3d.com/unity/qa/lts-releases
 )
