@@ -5,7 +5,11 @@ Incorporates:
 - Modified [HoloLensForCV](https://github.com/microsoft/HoloLensForCV) sample from Microsoft 
 - [BoundingBoxUtils-Unity](https://github.com/doughtmw/BoundingBoxUtils-Unity) sample
 
-![Yolo detection sample](https://github.com/doughtmw/YoloDetectionHoloLens-Unity/blob/master/Yolo-Detection-Example.jpg)
+Desktop (server)             |  HoloLens (client)
+:-------------------------:|:-------------------------:
+![](yolo-server.PNG)  |  ![](yolo-hololens.JPG)
+
+![Yolo detection hololens sample](https://github.com/doughtmw/YoloDetectionHoloLens-Unity/blob/master/yolo-hololens.JPG)
 
 ## Requirements
 - Tested with [Unity 2018.4 LTS](https://unity3d.com/unity/qa/lts-releases
