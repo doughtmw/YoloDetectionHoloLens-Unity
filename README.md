@@ -12,22 +12,22 @@ Desktop (server)             |  HoloLens (client)
 Difference in above bounding box size is caused by capturing frames from different time points and the viewing perspective through the HoloLens.
 
 ## Requirements
-- Tested with [Unity 2018.4 LTS](https://unity3d.com/unity/qa/lts-releases
+- Tested with [Unity 2018.4 LTS and Unity 2019.4 LTS](https://unity3d.com/unity/qa/lts-releases
 )
 - [Visual Studio 2017/2019](https://visualstudio.microsoft.com/downloads/)
 - Minimum [RS4](https://docs.microsoft.com/en-us/windows/mixed-reality/release-notes-april-2018), tested with [OS Build 17763.678](https://support.microsoft.com/en-ca/help/4511553/windows-10-update-kb4511553)
 
 ## Yolo Detect Sample
 ### Build HoloLensForCV project and configure YoloDetectionHoloLensUnity Unity project
-1. Copy precompiled dlls and HoloLensForCV.winmd file from the **Prebuilt->x86** folder to the **Assets->Plugins->x86** folder of the YoloDetectionHoloLensUnity project 
+1. Copy precompiled dlls and HoloLensForCV.winmd file from the **Prebuilt->x86/ARM** folder to the **Assets->Plugins->x86/ARM** folder of the YoloDetectionHoloLensUnity project. Due to the naming convention of dlls and winmd files, only one configuration (x86 OR ARM) can be run in Unity at a time
 
 *Optional: Build from source*
 - Open HoloLensForCV sample in VS2017/2019 and install included OpenCV nuget package to HoloLensForCV project. In the Nuget package manager console:
 ```
 Install-Package ..\OpenCV.HoloLens.3411.0.0.nupkg -ProjectName HoloLensForCV
 ```
-- Build the HoloLensForCV project (x86, Debug or Release)
-- Copy all output files from HoloLensForCV path (dlls and HoloLensForCV.winmd) to the **Assets->Plugins->x86** folder of the YoloDetectionHoloLensUnity project
+- Build the HoloLensForCV project (x86 OR ARM, Debug or Release)
+- Copy all output files from HoloLensForCV path (dlls and HoloLensForCV.winmd) to the **Assets->Plugins->x86/ARM** folder of the YoloDetectionHoloLensUnity project
 4. Open YoloDetectionHoloLensUnity Unity project, enter the [IP address of your desktop PC](https://support.microsoft.com/en-ca/help/4026518/windows-10-find-your-ip-address) into the relevant field on the script holder game object
 5. Under Unity build settings, switch the platform to Universal Windows Platform and [adjust relevant settings](https://blogs.msdn.microsoft.com/appconsult/2018/11/08/how-to-debug-unity-projects-with-il2cpp-backends-on-the-hololens/). Build project using IL2CPP
 6. Open VS solution from Unity build, build then deploy to device

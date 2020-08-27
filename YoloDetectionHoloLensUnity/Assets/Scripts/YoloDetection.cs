@@ -23,6 +23,8 @@ namespace YoloDetectionHoloLens
     public class YoloDetection : MonoBehaviour
     {
         #region UnityVariables
+        public CvUtils.DeviceTypeUnity deviceType;
+
         // Gesture recognizer
         private GestureRecognizer _gestureRecognizer;
 
@@ -70,6 +72,7 @@ namespace YoloDetectionHoloLens
         private MediaFrameSourceGroupType _selectedMediaFrameSourceGroupType = MediaFrameSourceGroupType.PhotoVideoCamera;
         private SensorFrameStreamer _sensorFrameStreamer;
         private SpatialPerception _spatialPerception;
+        private HoloLensForCV.DeviceType _deviceType;
         private MediaFrameSourceGroup _holoLensMediaFrameSourceGroup;
         private SensorType _sensorType;
 #endif
@@ -114,9 +117,13 @@ namespace YoloDetectionHoloLens
             _spatialPerception = new SpatialPerception();
 
             Debug.Log("YoloDetection.Detection.StartHoloLensMediaFrameSourceGroup: Setting up the media frame source group");
+            
+            // Cast device type 
+            _deviceType = (HoloLensForCV.DeviceType)deviceType;
             _holoLensMediaFrameSourceGroup = new MediaFrameSourceGroup(
                 _selectedMediaFrameSourceGroupType,
                 _spatialPerception,
+                _deviceType,
                 _sensorFrameStreamer);
             _holoLensMediaFrameSourceGroup.Enable(_sensorType);
 
@@ -266,6 +273,16 @@ namespace YoloDetectionHoloLens
             _gestureRecognizer.Dispose();
         }
         #endregion
+    }
+
+    public abstract class CvUtils
+    {
+        // Enum for selection of device type
+        public enum DeviceTypeUnity
+        {
+            HL1 = 0,
+            HL2 = 1
+        }
     }
 }
 
